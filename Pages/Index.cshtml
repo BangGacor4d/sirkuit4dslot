@@ -1,4 +1,7 @@
-﻿<!doctype html>
+﻿@page
+@model IndexModel
+
+<!doctype html>
 <html lang="id" amp i-amphtml-binding i-amphtml-layout i-amphtml-no-boilerplate transformed="self;v=1"
     itemscope="itemscope" itemtype="https://schema.org/WebPage">
 <head>
@@ -345,11 +348,11 @@
             display: block !important
         }
 
-        @supports (aspect-ratio:1/1) {
+        /* @supports (aspect-ratio:1/1) {
             i-amphtml-sizer.i-amphtml-disable-ar {
                 display: none !important
             }
-        }
+        } */
 
         .i-amphtml-blurry-placeholder,
         .i-amphtml-fill-content {
@@ -584,7 +587,7 @@
             display: block !important
         }
 
-        @media (min-width:1px) {
+        /* @media (min-width:1px) {
             :where(amp-accordion>section)>:first-child {
                 margin: 0;
                 background-color: #efefef;
@@ -595,7 +598,7 @@
             :where(amp-accordion>section)>:last-child {
                 margin: 0
             }
-        }
+        } */
 
         amp-accordion>section {
             float: none !important
@@ -647,7 +650,7 @@
             animation: -amp-start 8s steps(1, end) 0s 1 normal both
         }
 
-        @-webkit-keyframes -amp-start {
+        @webkit-keyframes -amp-start {
             from {
                 visibility: hidden
             }
@@ -657,7 +660,7 @@
             }
         }
 
-        @-moz-keyframes -amp-start {
+        @moz-keyframes -amp-start {
             from {
                 visibility: hidden
             }
@@ -667,7 +670,7 @@
             }
         }
 
-        @-ms-keyframes -amp-start {
+        @ms-keyframes -amp-start {
             from {
                 visibility: hidden
             }
@@ -677,7 +680,7 @@
             }
         }
 
-        @-o-keyframes -amp-start {
+        @o-keyframes -amp-start {
             from {
                 visibility: hidden
             }
@@ -1678,7 +1681,7 @@
             animation-iteration-count: infinite
         }
 
-        @-webkit-keyframes tada {
+        @webkit-keyframes tada {
             0% {
                 -webkit-transform: scale3d(1, 1, 1);
                 transform: scale3d(1, 1, 1)
@@ -1754,7 +1757,7 @@
             animation-iteration-count: infinite
         }
 
-        @-webkit-keyframes wobble {
+        @webkit-keyframes wobble {
             0% {
                 -webkit-transform: none;
                 transform: none
