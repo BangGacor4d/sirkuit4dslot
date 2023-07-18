@@ -1,7 +1,4 @@
-﻿@page
-@model IndexModel
-
-<!doctype html>
+﻿<!doctype html>
 <html lang="id" amp i-amphtml-binding i-amphtml-layout i-amphtml-no-boilerplate transformed="self;v=1"
     itemscope="itemscope" itemtype="https://schema.org/WebPage">
 <head>
@@ -73,6 +70,56 @@
             -moz-text-size-adjust: 100%;
             -ms-text-size-adjust: 100%;
             text-size-adjust: 100%
+        }
+
+        @@-webkit-keyframes -amp-start {
+          from {
+            visibility: hidden
+          }
+  
+          to {
+            visibility: visible
+          }
+        }
+  
+        @@-moz-keyframes -amp-start {
+          from {
+            visibility: hidden
+          }
+  
+          to {
+            visibility: visible
+          }
+        }
+  
+        @@-ms-keyframes -amp-start {
+          from {
+            visibility: hidden
+          }
+  
+          to {
+            visibility: visible
+          }
+        }
+  
+        @@-o-keyframes -amp-start {
+          from {
+            visibility: hidden
+          }
+  
+          to {
+            visibility: visible
+          }
+        }
+  
+        @@keyframes -amp-start {
+          from {
+            visibility: hidden
+          }
+  
+          to {
+            visibility: visible
+          }
         }
 
         html.i-amphtml-singledoc.i-amphtml-embedded {
@@ -348,6 +395,12 @@
             display: block !important
         }
 
+        @@supports (aspect-ratio:1/1) {
+          i-amphtml-sizer.i-amphtml-disable-ar {
+            display: none !important
+          }
+        }
+
         .i-amphtml-blurry-placeholder,
         .i-amphtml-fill-content {
             display: block;
@@ -579,6 +632,19 @@
 
         amp-accordion {
             display: block !important
+        }
+
+        @@media (min-width:1px) {
+          :where(amp-accordion>section)>:first-child {
+            margin: 0;
+            background-color: #efefef;
+            padding-right: 20px;
+            border: 1px solid #dfdfdf
+          }
+  
+          :where(amp-accordion>section)>:last-child {
+            margin: 0
+          }
         }
 
         amp-accordion>section {
@@ -1612,7 +1678,7 @@
             animation-iteration-count: infinite
         }
 
-        @@keyframes tada {
+        @@-webkit-keyframes tada {
             0% {
                 -webkit-transform: scale3d(1, 1, 1);
                 transform: scale3d(1, 1, 1)
@@ -1688,7 +1754,7 @@
             animation-iteration-count: infinite
         }
 
-        @@keyframes wobble {
+        @@-webkit-keyframes wobble {
             0% {
                 -webkit-transform: none;
                 transform: none
