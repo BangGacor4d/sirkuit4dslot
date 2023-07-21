@@ -4,8 +4,8 @@ FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /source
 
 # Copy everything in this project and build app
-COPY . ./dotnetcore-docs-hello-world/
-WORKDIR /source/dotnetcore-docs-hello-world
+COPY . ./kebaya4dedge/
+WORKDIR /source/kebaya4dedge
 RUN dotnet publish -c release -o /app 
 
 # final stage/image
@@ -19,4 +19,4 @@ ENV PORT 80
 EXPOSE 80
 
 # Start the app
-ENTRYPOINT ["dotnet", "dotnetcoresample.dll"]
+ENTRYPOINT ["dotnet", "kebaya4dedge.dll"]
