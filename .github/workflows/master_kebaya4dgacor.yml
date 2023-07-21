@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'kebaya4dgacor'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_51440C9C49BF4B04922695EB9F395EB8 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1C29424521684CCD9296F63A1456417A }}
           package: .
