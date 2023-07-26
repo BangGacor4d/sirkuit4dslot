@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Runtime.InteropServices;
 
-namespace kebaya4dedge.Pages;
+namespace kebaya4dfd.Pages;
 
 public class IndexModel : PageModel
 {

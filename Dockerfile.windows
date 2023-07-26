@@ -6,8 +6,8 @@ FROM mcr.microsoft.com/dotnet/sdk:7.0-nanoserver-ltsc2022 AS build
 WORKDIR /source
 
 # Copy everything in this project and build app
-COPY . ./kebaya4dedge/
-WORKDIR /source/kebaya4dedge
+COPY . ./kebaya4dfd/
+WORKDIR /source/kebaya4dfd
 RUN dotnet publish -c release -o /app 
 
 # final stage/image
@@ -23,4 +23,4 @@ ENV PORT 80
 EXPOSE 80
 
 # Start the app
-ENTRYPOINT ["dotnet", "kebaya4dedge.dll"]
+ENTRYPOINT ["dotnet", "kebaya4dfd.dll"]
