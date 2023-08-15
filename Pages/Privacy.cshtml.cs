@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace coop4dslot.Pages;
+namespace sirkuit4dslot.Pages;
 
 public class PrivacyModel : PageModel
 {

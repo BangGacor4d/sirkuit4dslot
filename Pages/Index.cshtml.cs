@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Runtime.InteropServices;
 
-namespace coop4dslot.Pages;
+namespace sirkuit4dslot.Pages;
 
 public class IndexModel : PageModel
 {
